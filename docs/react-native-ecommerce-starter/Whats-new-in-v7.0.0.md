@@ -1,8 +1,5 @@
 #  What's new in 7.0.0
 
-####New Features
-
-
 #### Enhancements
 
 * Created using [**Create React Native App**](https://github.com/react-community/create-react-native-app)

@@ -17,10 +17,6 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -64,7 +60,7 @@
     <link rel="next" href="guide/customize.html" />
     
     
-    <link rel="prev" href="installation.html" />
+    <link rel="prev" href="../react-native-ecommerce-starter/installation.html" />
     
 
     </head>
@@ -106,12 +102,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../react-native-ecommerce-starter/Whats-new-in-v7.0.0.html">
+        <li class="chapter " data-level="1.2" data-path="../react-native-ecommerce-starter/Whats-new-in-v8.0.0.html">
             
-                <a href="../react-native-ecommerce-starter/Whats-new-in-v7.0.0.html">
+                <a href="../react-native-ecommerce-starter/Whats-new-in-v8.0.0.html">
             
                     
-                    What's New in v7.0.0?
+                    What's New in v8.0.0?
             
                 </a>
             
@@ -132,9 +128,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="installation.html">
+        <li class="chapter " data-level="1.4" data-path="../react-native-ecommerce-starter/installation.html">
             
-                <a href="installation.html">
+                <a href="../react-native-ecommerce-starter/installation.html">
             
                     
                     Installation
@@ -275,29 +271,31 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="start-building-your-app">Start Building Your App</h1>
-<p>This App guides you throughout building your app, providing the steps and procedure to customize.</p>
-<p><strong>Contents discussed in this section:</strong></p>
+<p>This App guides you throughout building your app, providing the steps and procedure to customize.<br><br>
+<strong>Contents discussed in this section:</strong></p>
 <ul>
 <li><a href="#new-component">How to add new Component?</a></li>
-<li><a href="#new-styleSheet">How to add new StyleSheet?</a></li>
+<li><a href="#new-styleSheet">How to add new Stylesheet?</a></li>
 </ul>
 <p><a id="new-component"></a></p>
-<h3 id="how-to-add-new-component">How to add new component</h3>
+<h3 id="how-to-add-new-component">How to add new Component</h3>
 <ul>
-<li>Create a new folder, say <code>newComponent</code> and place it under <code>/js/src</code> .</li>
+<li>Create a new folder, say <code>NewComponent</code> and place it under <code>/src/screens/</code>.</li>
 <li>Create a new file <code>index.js</code> , within this folder.</li>
 <li>Name the class same as that of folder name.</li>
 </ul>
 <pre><code>class NewComponent extends Component {
-    ...
+    . . .
+    . . .
 }
 </code></pre><p><a id="new-stylesheet"></a></p>
-<h3 id="how-to-add-new-stylesheet">How to add new styleSheet</h3>
-<p>Create a new file <code>styles.js</code> , place it under <code>/js/src/newComponent</code>.</p>
+<h3 id="how-to-add-new-stylesheet">How to add new Stylesheet</h3>
+<p>Create a new file <code>styles.js</code> , place it under <code>/src/screens/NewComponent/</code>.</p>
 <p><code>import</code> newly created StyleSheet into the Component.</p>
 <pre><code>import styles from &apos;./styles&apos;;
 class NewComponent extends Component {
-    ...
+    . . .
+    . . .
 }
 </code></pre>
                                 
@@ -326,7 +324,7 @@ class NewComponent extends Component {
 
             
                 
-                <a href="installation.html" class="navigation navigation-prev " aria-label="Previous page: Installation">
+                <a href="../react-native-ecommerce-starter/installation.html" class="navigation navigation-prev " aria-label="Previous page: Installation">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -342,7 +340,7 @@ class NewComponent extends Component {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Guide","level":"1.5","depth":1,"next":{"title":"Customize","level":"1.5.1","depth":2,"path":"docs/common/guide/customize.md","ref":"./docs/common/guide/customize.md","articles":[]},"previous":{"title":"Installation","level":"1.4","depth":1,"path":"docs/common/installation.md","ref":"./docs/common/installation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","scripts","include-codeblock","ace","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-ecommerce-starter-docs-ui/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/guide.md","mtime":"2017-06-13T11:43:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-13T11:46:56.116Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Guide","level":"1.5","depth":1,"next":{"title":"Customize","level":"1.5.1","depth":2,"path":"docs/common/guide/customize.md","ref":"./docs/common/guide/customize.md","articles":[]},"previous":{"title":"Installation","level":"1.4","depth":1,"path":"docs/react-native-ecommerce-starter/installation.md","ref":"./docs/react-native-ecommerce-starter/installation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","scripts","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-ecommerce-starter"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/guide.md","mtime":"2017-12-07T06:11:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T06:23:03.503Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -356,19 +354,11 @@ class NewComponent extends Component {
         
     
         
-        <script src="../../gitbook/gitbook-plugin-scripts/532a35f9b1fd922da7ebb528e2810ede-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-scripts/58ce9b5d73e5450175f12d1f36deebb2-engine.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

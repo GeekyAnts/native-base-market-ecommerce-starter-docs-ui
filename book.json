@@ -1,20 +1,13 @@
 {
     "plugins": [
         "ga",
-        "scripts",
-        "include-codeblock",
-        "ace",
-        "edit-link"
+        "scripts"
     ],
     "title": "NativeBase Market UI Themes",
-    "variables":{
-      "options": "react-native-flat-app-theme"
-       },
+    "variables": {
+      "options": "react-native-ecommerce-starter"
+    },
     "pluginsConfig": {
-      "edit-link": {
-            "base": "https://github.com/GeekyAnts/native-base-market-ecommerce-starter-docs-ui/tree/master",
-            "label": "Edit This Page"
-        },
       "scripts": {
           "files": [
               "./engine.js"
@@ -22,11 +15,6 @@
       },
         "ga": {
             "token": "UA-91837749-1"
-        },
-        "include-codeblock": {
-                "template": "ace",
-                "unindent": true
-            }
+        }
     }
-
 }

@@ -2,60 +2,59 @@
 
 _package.json_
 
-<pre class="line-numbers"><code class="language-json">
-{
+<pre class="line-numbers"><code class="language-json">{
   "name": "EcommerceStarter",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "0.0.26",
-    "jest-expo": "^0.3.0",
-    "react-test-renderer": "~15.4.1",
-     "babel-eslint": "^6.1.2",
-    "babel-jest": "16.0.0",
-    "babel-preset-react-native": "1.9.0",
-    "chai": "^3.5.0",
-    "eslint": "^3.5.0",
-    "eslint-config-airbnb": "^11.1.0",
-    "eslint-plugin-import": "^1.14.0",
-    "eslint-plugin-jsx-a11y": "^2.2.1",
-    "eslint-plugin-react": "^6.2.0",
-    "eslint-plugin-react-native": "^2.0.0",
-    "jest": "16.0.2",
-    "jest-react-native": "16.0.0",
-    "mocha": "^2.5.3"
+    "babel-eslint": "7.2.3",
+    "eslint": "4.4.1",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-prettier": "2.1.2",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-react-native": "3.0.1",
+    "flow-bin": "0.52.0",
+    "flow-typed": "2.1.5",
+    "husky": "0.14.3",
+    "jest": "20.0.4",
+    "jest-expo": "19.0.5",
+    "prettier": "1.5.3",
+    "react-native-scripts": "1.1.0",
+    "react-test-renderer": "16.0.0-alpha.12"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "postinstall": "remotedev-debugger",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "jest && eslint .",
+    "precommit": "yarn test"
   },
-  "upstreamRepo": "git@gitstrap.com:strapmobile/Ecommerce-seed.git",
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|lottie-react-native|expo|react-native-maps|react-native-svg|react-native-branch|native-base-shoutem-theme|react-native-easy-grid|react-native-drawer|react-native-vector-icons|react-native-keyboard-aware-scroll-view|react-native-swiper|react-navigation|native-base|@expo|react-native-scrollable-tab-view|react-native-simple-modal)/)"
+    ]
   },
   "dependencies": {
-    "expo": "^15.1.0",
-    "react": "~15.4.0",
-    "react-native": "0.42.3",
-     "color": "^0.11.3",
+    "color": "1.0.3",
+    "expo": "21.0.2",
     "lodash": "^4.13.1",
     "moment": "^2.13.0",
-    "native-base": "2.1.0-rc.2",
-    "react-native-button": "^1.8.2",
-    "react-native-code-push": "1.17.0-beta",
+    "native-base": "2.3.1",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.48.4",
     "react-native-easy-grid": "0.1.7",
-    "react-native-modalbox": "^1.3.9",
-    "react-native-router-flux": "^3.38.0",
-    "react-redux": "^4.4.5",
-    "redux": "^3.5.2",
-    "redux-persist": "^3.2.2",
-    "redux-thunk": "^2.1.0",
-    "remote-redux-devtools": "^0.3.3",
-    "remote-redux-devtools-on-debugger": "^0.4.6"
+    "react-navigation": "1.0.0-beta.11",
+    "react-redux": "5.0.5",
+    "redux": "3.7.2",
+    "redux-form": "7.0.3",
+    "redux-persist": "4.10.0",
+    "redux-thunk": "2.2.0",
+    "remote-redux-devtools": "0.5.0",
+    "remote-redux-devtools-on-debugger": "0.8.0"
   }
 }</code></pre>
